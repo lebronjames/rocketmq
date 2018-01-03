@@ -67,7 +67,6 @@ public class PushConsumer {
 					System.out.println(new String(msg.getBody()));
 					return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
 				}
-				
 			});
 			consumer.start();
 		}catch(Exception e){
